@@ -4,7 +4,7 @@
   <name>articubot_one</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="nguyendomanhtb@gmail.com">MY NAME</manh nd>
+  <maintainer email="nguyendomanhtb@gmail.com">manh nd</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

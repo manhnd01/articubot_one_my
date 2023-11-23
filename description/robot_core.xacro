@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-    <xacro:include filename="inertial_macros.xacro"/>
+    <!-- <xacro:include filename="inertial_macros.xacro"/> -->
 
 
     
@@ -60,8 +60,4 @@
             <material name="white"/>
         </visual>
     </link>
-
-
-   
-
 </robot>
