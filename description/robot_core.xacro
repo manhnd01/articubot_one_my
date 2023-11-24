@@ -71,6 +71,11 @@
         <origin xyz="-0.1 0 0"/>
     </joint>
 
+    <!-- gazebo chassis -->
+    <gazebo reference="chassis">
+        <material>Gazebo/white</material>
+    </gazebo>
+
     <!-- banh xe trai-->
     <link name="left_whell">
         <visual>
@@ -100,6 +105,12 @@
         <axis xyz="0.0 0.0 1.0"/>
     </joint>
 
+    <!-- Gazebo banh xe trai -->
+    <gazebo reference="left_wheel">
+        <material>Gazebo/blue</material>
+    </gazebo>
+
+
     <!-- banh xe phai -->
     <link name="right_whell">
         <visual>
@@ -127,6 +138,12 @@
         <origin xyz="0 -0.175 0" rpy="${pi/2} 0 0 "/>
         <axis xyz="0.0 0.0 -1.0"/>
     </joint>
+
+    <!-- Gazebo banh xe phai -->
+    <gazebo reference="right_wheel">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
 
     <!-- banh xe da huong (choi lau nha) -->
     <link name="caster_wheel">
@@ -156,5 +173,9 @@
         <origin xyz="0.24 0 0"/>
     </joint>
 
+    <!-- Gazebo banh xe da huong -->
+    <gazebo reference="caster_wheel">
+        <material>Gazebo/Black</material>
+    </gazebo>
 
 </robot>
