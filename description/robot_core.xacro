@@ -31,14 +31,14 @@
     </link>
 
     <!-- toa do start -->
-    <link name="base_footprint">
-    </link>
+    <!-- <link name="base_footprint">
+    </link> -->
 
-    <joint name="base_footprint_joint" type="fixed">
+    <!-- <joint name="base_footprint_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_footprint"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
-    </joint>
+    </joint> -->
 
 
     <!-- khung xe-->
@@ -77,7 +77,7 @@
     </gazebo>
 
     <!-- banh xe trai-->
-    <link name="left_whell">
+    <link name="left_wheel">
         <visual>
             <geometry>
                 <cylinder radius="0.05" length="0.04"/> 
@@ -98,21 +98,23 @@
 
     </link>
 
-    <joint name="left_whell_joint" type="continuous">
+    <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link"/>
-        <child link="left_whell"/>
+        <child link="left_wheel"/>
         <origin xyz="0 0.175 0" rpy="-${pi/2} 0 0 "/>
         <axis xyz="0.0 0.0 1.0"/>
     </joint>
 
     <!-- Gazebo banh xe trai -->
     <gazebo reference="left_wheel">
-        <material>Gazebo/blue</material>
+        <material>
+            Gazebo/Blue
+        </material>
     </gazebo>
 
 
     <!-- banh xe phai -->
-    <link name="right_whell">
+    <link name="right_wheel">
         <visual>
             <geometry>
                 <cylinder radius="0.05" length="0.04"/> 
@@ -132,16 +134,18 @@
         </xacro:inertial_cylinder>
     </link>
 
-    <joint name="right_whell_joint" type="continuous">
+    <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link"/>
-        <child link="right_whell"/>
+        <child link="right_wheel"/>
         <origin xyz="0 -0.175 0" rpy="${pi/2} 0 0 "/>
         <axis xyz="0.0 0.0 -1.0"/>
     </joint>
 
     <!-- Gazebo banh xe phai -->
     <gazebo reference="right_wheel">
-        <material>Gazebo/Blue</material>
+        <material>
+            Gazebo/Blue
+        </material>
     </gazebo>
 
 
@@ -176,6 +180,8 @@
     <!-- Gazebo banh xe da huong -->
     <gazebo reference="caster_wheel">
         <material>Gazebo/Black</material>
+        <mu1 value = "0.001"/>
+        <mu2 value = "0.001"/>
     </gazebo>
 
 </robot>
