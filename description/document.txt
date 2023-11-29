@@ -9,4 +9,8 @@ source ~/ros2_ws/install/setup.bash
 install:
 
 
+chuyern doi tu anh nen sang anh k nen
+ros2 run image_transport republish compressted raw --ros-args -r in/compressted:=/camera/image_raw/compressted -r out:=/camera/image_raw/uncompressted
+
+
 sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
