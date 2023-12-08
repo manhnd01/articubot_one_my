@@ -14,7 +14,7 @@
             <wheel_diameter>0.1</wheel_diameter>
 
 
-            <!-- gioi han momen xoan (toc do)-->
+            <!-- gioi han momen xoan (toc do)banh xe-->
             <max_wheel_torque>200</max_wheel_torque>
             <max_wheel_acceleration>10.0</max_wheel_acceleration>
 
