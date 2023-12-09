@@ -18,7 +18,7 @@
             <max_wheel_torque>200</max_wheel_torque>
             <max_wheel_acceleration>10.0</max_wheel_acceleration>
 
-            <!-- ket qua: cho biet plugin xuat ra nhung gi ???-->
+            <!-- ket qua: cho biet plugin xuat ra nhung gi -->
             <odometry_frame>odom</odometry_frame>
             <robot_base_frame>base_link</robot_base_frame>
             
